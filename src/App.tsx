@@ -1,10 +1,18 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import routes from '@/router';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">music</header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        {routes.map((route, i) => (
+          <Route key={i} path={route.path}>
+            <route.component {...route} />
+          </Route>
+        ))}
+      </Switch>
+    </BrowserRouter>
   );
 }
 
