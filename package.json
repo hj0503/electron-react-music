@@ -6,7 +6,8 @@
     "build:electron": "npm run build && electron-builder",
     "dev": "vite --host",
     "build": "tsc && vite build",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx src"
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx src",
+    "git:aliyun": "./git.sh"
   },
   "dependencies": {
     "react": "^17.0.2",
