@@ -3,10 +3,28 @@
   background-color: #f0f0f0;
   &__logo {
     margin: 0;
-    padding: 26px 0 10px 42px;
+    padding: 20px 0 10px 42px;
     img {
       width: 90px;
       height: 24px;
+    }
+  }
+  &__classification {
+    padding: 20px;
+    &-title {
+      padding-left: 24px;
+      color: #a8a8a8;
+      margin-bottom: 16px;
+    }
+    &-menus {
+      .menu {
+        padding: 0 24px;
+        line-height: 30px;
+        a {
+          text-decoration: none;
+          color: #606060;
+        }
+      }
     }
   }
 }
