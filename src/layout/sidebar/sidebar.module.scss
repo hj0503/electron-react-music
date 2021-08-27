@@ -3,26 +3,43 @@
   background-color: #f0f0f0;
   &__logo {
     margin: 0;
-    padding: 20px 0 10px 42px;
+    padding: 24px 0 10px 42px;
     img {
       width: 90px;
       height: 24px;
     }
   }
-  &__classification {
-    padding: 20px;
-    &-title {
-      padding-left: 24px;
-      color: #a8a8a8;
-      margin-bottom: 16px;
-    }
-    &-menus {
-      .menu {
-        padding: 0 24px;
-        line-height: 30px;
-        a {
-          text-decoration: none;
-          color: #606060;
+  &__classifications {
+    padding: 16px 20px;
+    .sidebar__classification {
+      margin-bottom: 50px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &-title {
+        padding-left: 24px;
+        color: #a8a8a8;
+        margin-bottom: 16px;
+      }
+      &-menus {
+        .menu {
+          padding: 0 16px;
+          margin-bottom: 12px;
+          line-height: 30px;
+          border-radius: 4px;
+          &.is-active {
+            background-image: linear-gradient(to left right, #1dd5c0, #30c37c);
+          }
+          &:hover {
+            background-color: #dcdcdc;
+          }
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          a {
+            text-decoration: none;
+            color: #606060;
+          }
         }
       }
     }

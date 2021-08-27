@@ -1,4 +1,3 @@
-import Layout from '@/layout';
 import { sideBarMenus, MenuType } from '@/config/sideMenus';
 
 export type RouteConfig = {
@@ -11,18 +10,7 @@ export type RouteConfig = {
 };
 
 const routes: Array<RouteConfig> = [
-  {
-    path: '/',
-    exact: true,
-    component: Layout,
-    redirect: '/recommend',
-    routes: [
-      ...sideBarMenus.reduce(
-        (total: Array<MenuType>, current) => total.concat(current.sideMenus),
-        []
-      ),
-    ],
-  },
+  ...sideBarMenus.reduce((total: Array<MenuType>, current) => total.concat(current.sideMenus), []),
 ];
 
 export default routes;

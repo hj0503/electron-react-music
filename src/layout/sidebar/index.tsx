@@ -10,10 +10,10 @@ const Sidebar: React.FC = () => {
       <h1 className={styles['sidebar__logo']}>
         <img src={logo} alt="qq音乐" />
       </h1>
-      <div className={styles['sidebar__classification']}>
+      <div className={styles['sidebar__classifications']}>
         {sideBarMenus.map(classifications => {
           return (
-            <React.Fragment key={classifications.title}>
+            <div className={styles['sidebar__classification']} key={classifications.title}>
               <div className={styles['sidebar__classification-title']}>{classifications.title}</div>
               <ul className={styles['sidebar__classification-menus']}>
                 {classifications.sideMenus.map(menu => {
@@ -24,7 +24,7 @@ const Sidebar: React.FC = () => {
                   );
                 })}
               </ul>
-            </React.Fragment>
+            </div>
           );
         })}
       </div>
