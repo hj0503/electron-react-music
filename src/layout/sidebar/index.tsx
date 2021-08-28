@@ -1,10 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
+import Icon from '@ant-design/icons';
 import styles from './sidebar.module.scss';
 import logo from '@/assets/image/logo.png';
 import { sideBarMenus } from '@/config/sideMenus';
+import classNames from 'classnames';
 
 const Sidebar: React.FC = () => {
+  const { push } = useHistory();
+  const { pathname } = useLocation();
+  const clickMenuBar = (path: string) => {
+    push(path);
+  };
   return (
     <aside className={styles.sidebar}>
       <h1 className={styles['sidebar__logo']}>
@@ -18,8 +25,15 @@ const Sidebar: React.FC = () => {
               <ul className={styles['sidebar__classification-menus']}>
                 {classifications.sideMenus.map(menu => {
                   return (
-                    <li className={styles['menu']} key={menu.path}>
-                      <Link to={menu.path}>{menu.label}</Link>
+                    <li
+                      className={classNames(styles.menu, {
+                        [styles['is-active']]: pathname.indexOf(menu.path) >= 0,
+                      })}
+                      key={menu.path}
+                      onClick={() => clickMenuBar(menu.path)}
+                    >
+                      {menu.icon && <Icon className={styles.menu__icon} component={menu.icon} />}
+                      {menu.label}
                     </li>
                   );
                 })}

@@ -28,8 +28,10 @@
           margin-bottom: 12px;
           line-height: 30px;
           border-radius: 4px;
+          color: #606060;
           &.is-active {
-            background-image: linear-gradient(to left right, #1dd5c0, #30c37c);
+            color: #fff;
+            background-image: linear-gradient(to right, #1dd5c0, #30c37c);
           }
           &:hover {
             background-color: #dcdcdc;
@@ -37,9 +39,10 @@
           &:last-of-type {
             margin-bottom: 0;
           }
-          a {
-            text-decoration: none;
-            color: #606060;
+          &__icon {
+            font-size: 16px;
+            vertical-align: text-bottom;
+            margin-right: 8px;
           }
         }
       }

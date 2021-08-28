@@ -1,4 +1,5 @@
-import { lazy } from 'react';
+import React, { lazy } from 'react';
+import { RecommendSvg, MusicHallSvg, VideoSvg, RadioSvg } from '@/components/svg';
 
 export type MenuType = {
   path: string;
@@ -6,6 +7,7 @@ export type MenuType = {
   label?: string;
   exact?: boolean;
   redirect?: string;
+  icon?: React.FC;
 };
 export type SideMenusType = Array<MenuType>;
 
@@ -20,21 +22,25 @@ export const sideBarMenus: SideBarMenusType = [
     sideMenus: [
       {
         label: '推荐',
+        icon: RecommendSvg,
         path: '/recommend',
         component: lazy(() => import('@/pages/recommend')),
       },
       {
         label: '音乐馆',
+        icon: MusicHallSvg,
         path: '/music-hall',
         component: lazy(() => import('@/pages/music-hall')),
       },
       {
         label: '视频',
+        icon: VideoSvg,
         path: '/video',
         component: lazy(() => import('@/pages/video')),
       },
       {
         label: '电台',
+        icon: RadioSvg,
         path: '/radio',
         component: lazy(() => import('@/pages/radio')),
       },
