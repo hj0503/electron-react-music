@@ -1,6 +1,6 @@
 @import 'normalize.css';
 @import 'var.scss';
-
+@import 'reset-antd.scss';
 html,
 body {
   color: #000;
@@ -21,6 +21,11 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+input::-webkit-input-placeholder{
+  font-size: 12px !important;
+  color: #9b9b9b !important;
 }
 
 ::-webkit-scrollbar {

@@ -7,6 +7,7 @@ import LocalSvg from './local';
 import DownloadSvg from './download';
 import RecentPlaySvg from './recent-play';
 import BuySvg from './buy';
+import SearchSvg from './search';
 
 export {
   RecommendSvg,
@@ -18,4 +19,5 @@ export {
   DownloadSvg,
   RecentPlaySvg,
   BuySvg,
+  SearchSvg,
 };
