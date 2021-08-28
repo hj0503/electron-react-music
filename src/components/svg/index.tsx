@@ -1,6 +1,21 @@
 import RecommendSvg from './recommend';
-import MusicHallSvg from './music-hall';
+import MusicSvg from './music';
 import VideoSvg from './video';
 import RadioSvg from './radio';
+import LikeSvg from './like';
+import LocalSvg from './local';
+import DownloadSvg from './download';
+import RecentPlaySvg from './recent-play';
+import BuySvg from './buy';
 
-export { RecommendSvg, MusicHallSvg, VideoSvg, RadioSvg };
+export {
+  RecommendSvg,
+  MusicSvg,
+  VideoSvg,
+  RadioSvg,
+  LikeSvg,
+  LocalSvg,
+  DownloadSvg,
+  RecentPlaySvg,
+  BuySvg,
+};

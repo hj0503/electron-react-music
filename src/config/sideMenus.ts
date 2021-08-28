@@ -1,5 +1,15 @@
 import React, { lazy } from 'react';
-import { RecommendSvg, MusicHallSvg, VideoSvg, RadioSvg } from '@/components/svg';
+import {
+  RecommendSvg,
+  MusicSvg,
+  VideoSvg,
+  RadioSvg,
+  LikeSvg,
+  LocalSvg,
+  DownloadSvg,
+  RecentPlaySvg,
+  BuySvg,
+} from '@/components/svg';
 
 export type MenuType = {
   path: string;
@@ -28,7 +38,7 @@ export const sideBarMenus: SideBarMenusType = [
       },
       {
         label: '音乐馆',
-        icon: MusicHallSvg,
+        icon: MusicSvg,
         path: '/music-hall',
         component: lazy(() => import('@/pages/music-hall')),
       },
@@ -50,24 +60,40 @@ export const sideBarMenus: SideBarMenusType = [
     title: '我的音乐',
     sideMenus: [
       {
-        label: '推荐',
-        path: '/recommend',
-        component: lazy(() => import('@/pages/recommend')),
+        label: '我喜欢',
+        icon: LikeSvg,
+        path: '/like',
+        component: lazy(() => import('@/pages/like')),
       },
       {
-        label: '音乐馆',
-        path: '/music-hall',
-        component: lazy(() => import('@/pages/music-hall')),
+        label: '本地歌曲',
+        icon: LocalSvg,
+        path: '/local',
+        component: lazy(() => import('@/pages/local')),
       },
       {
-        label: '视频',
-        path: '/video',
-        component: lazy(() => import('@/pages/video')),
+        label: '下载歌曲',
+        icon: DownloadSvg,
+        path: '/download',
+        component: lazy(() => import('@/pages/download')),
       },
       {
-        label: '电台',
-        path: '/radio',
-        component: lazy(() => import('@/pages/radio')),
+        label: '最近播放',
+        icon: RecentPlaySvg,
+        path: '/recent-play',
+        component: lazy(() => import('@/pages/recent-play')),
+      },
+      {
+        label: '已购音乐',
+        icon: BuySvg,
+        path: '/buy',
+        component: lazy(() => import('@/pages/buy')),
+      },
+      {
+        label: '微云音乐网盘',
+        icon: MusicSvg,
+        path: '/music-cloud',
+        component: lazy(() => import('@/pages/music-cloud')),
       },
     ],
   },

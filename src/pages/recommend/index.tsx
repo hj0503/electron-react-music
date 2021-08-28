@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Recommend: React.FC = () => {
-  return <div>recommend</div>;
+  return <div>推荐</div>;
 };
 
 export default Recommend;

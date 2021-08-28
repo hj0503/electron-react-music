@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MusicHallSvg: React.FC = () => {
+const MusicSvg: React.FC = () => {
   return (
     <svg
       className="icon"
@@ -20,4 +20,4 @@ const MusicHallSvg: React.FC = () => {
   );
 };
 
-export default MusicHallSvg;
+export default MusicSvg;
