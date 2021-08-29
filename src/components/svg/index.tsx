@@ -8,6 +8,13 @@ import DownloadSvg from './download';
 import RecentPlaySvg from './recent-play';
 import BuySvg from './buy';
 import SearchSvg from './search';
+import AvatarSvg from './avatar';
+import ArrowLeftSvg from './arrow-left';
+import ArrowRightSvg from './arrow-right';
+import MessageSvg from './message';
+import SkinSvg from './skin';
+import SettingSvg from './setting';
+import SwitchModeSvg from './switch-mode';
 
 export {
   RecommendSvg,
@@ -20,4 +27,11 @@ export {
   RecentPlaySvg,
   BuySvg,
   SearchSvg,
+  AvatarSvg,
+  ArrowLeftSvg,
+  ArrowRightSvg,
+  MessageSvg,
+  SkinSvg,
+  SettingSvg,
+  SwitchModeSvg,
 };

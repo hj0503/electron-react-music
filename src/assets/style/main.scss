@@ -3,17 +3,17 @@
 @import 'reset-antd.scss';
 html,
 body {
-  color: #000;
   height: 100%;
   overflow: hidden;
+}
+
+#root {
+  color: #000;
+  height: 100%;
   background-color: #f6f6f6;
   font-size: 13px;
   font-family: poppin, Tahoma, Arial, \5fae\8f6f\96c5\9ed1, sans-serif;
   font-family: Tahoma, Arial, \5fae\8f6f\96c5\9ed1, sans-serif, 9;
-}
-
-#root {
-  height: 100%;
 }
 
 ul,
