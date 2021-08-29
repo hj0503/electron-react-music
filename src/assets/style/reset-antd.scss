@@ -1,6 +1,9 @@
 .ant-input-affix-wrapper {
   border: none !important;
   background-color: #ddd !important;
+  &:focus, &-focused {
+    box-shadow: none !important;
+  }
   &:not(.nt-input-affix-wrapper):hover {
     border-color: none !important;
     box-shadow: red !important;

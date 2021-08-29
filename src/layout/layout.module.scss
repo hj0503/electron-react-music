@@ -7,8 +7,15 @@
     flex-direction: column;
     height: 100%;
     &__body {
+      position: relative;
       flex: 1;
       overflow: auto;
+      .main__loading {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }

@@ -8,28 +8,26 @@ function App() {
   return (
     <BrowserRouter>
       <Layout>
-        <Suspense fallback={<Spin className="main__loading" style={{ position: 'absolute' }} />}>
-          <Switch>
-            {routes.map((route, i) => {
-              return (
-                <Route key={i} path={route.path}>
-                  <React.Fragment>
-                    <route.component {...route} />
-                    {route.routes &&
-                      route.routes.map(r => {
-                        return (
-                          <Route key={r.path} path={r.path}>
-                            <route.component {...route} />
-                          </Route>
-                        );
-                      })}
-                  </React.Fragment>
-                </Route>
-              );
-            })}
-            <Redirect to="/recommend" />
-          </Switch>
-        </Suspense>
+        <Switch>
+          {routes.map((route, i) => {
+            return (
+              <Route key={i} path={route.path}>
+                <React.Fragment>
+                  <route.component {...route} />
+                  {route.routes &&
+                    route.routes.map(r => {
+                      return (
+                        <Route key={r.path} path={r.path}>
+                          <route.component {...route} />
+                        </Route>
+                      );
+                    })}
+                </React.Fragment>
+              </Route>
+            );
+          })}
+          <Redirect to="/recommend" />
+        </Switch>
       </Layout>
     </BrowserRouter>
   );
