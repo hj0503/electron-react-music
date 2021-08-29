@@ -30,6 +30,9 @@
           color: #7c7c7c;
           margin-right: 12px;
           cursor: pointer;
+          &:last-of-type {
+            margin-right: 0;
+          }
         }
       }
     }

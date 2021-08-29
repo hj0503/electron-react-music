@@ -5,8 +5,8 @@ const { join } = require('path');
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 1000,
-    height: 700,
+    width: 1050,
+    height: 670,
   });
 
   isDev ? win.loadURL('http://localhost:3000') : win.loadFile(join(__dirname, 'dist/index.html'));
