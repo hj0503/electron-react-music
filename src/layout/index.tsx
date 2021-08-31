@@ -6,9 +6,7 @@ import styles from './layout.module.scss';
 import { RouteConfig } from '@/router';
 import { Spin } from 'antd';
 
-type Props = { routes?: Array<RouteConfig> };
-
-const Layout: React.FC<Props> = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
   return (
     <div className={styles['main-layout']}>
       <Sidebar />
