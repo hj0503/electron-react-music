@@ -15,6 +15,10 @@ import MessageSvg from './message';
 import SkinSvg from './skin';
 import SettingSvg from './setting';
 import SwitchModeSvg from './switch-mode';
+import PlayPrevSvg from './play-prev';
+import PlayNextSvg from './play-next';
+import PlayRandomSvg from './play-random';
+import VoiceSvg from './voice';
 
 export {
   RecommendSvg,
@@ -34,4 +38,8 @@ export {
   SkinSvg,
   SettingSvg,
   SwitchModeSvg,
+  PlayPrevSvg,
+  PlayNextSvg,
+  PlayRandomSvg,
+  VoiceSvg,
 };
