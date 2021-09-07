@@ -19,6 +19,8 @@ import PlayPrevSvg from './play-prev';
 import PlayNextSvg from './play-next';
 import PlayRandomSvg from './play-random';
 import VoiceSvg from './voice';
+import PlaySvg from './play';
+import PlayPauseSvg from './play-pause';
 
 export {
   RecommendSvg,
@@ -42,4 +44,6 @@ export {
   PlayNextSvg,
   PlayRandomSvg,
   VoiceSvg,
+  PlaySvg,
+  PlayPauseSvg,
 };

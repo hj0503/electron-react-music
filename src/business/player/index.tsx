@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from '@ant-design/icons';
 import styles from './index.module.scss';
-import { PlayNextSvg, PlayPrevSvg, PlayRandomSvg, VoiceSvg } from '@/components/svg';
+import { PlayNextSvg, PlayPrevSvg, PlayRandomSvg, PlaySvg, VoiceSvg } from '@/components/svg';
 
 const Player: React.FC = () => {
   return (
@@ -13,7 +13,9 @@ const Player: React.FC = () => {
         <div className={styles['player__play-prev']}>
           <Icon component={PlayPrevSvg}></Icon>
         </div>
-        <div className={styles['player__play-status']}>播放中</div>
+        <div className={styles['player__play-status']}>
+          <Icon component={PlaySvg} />
+        </div>
         <div className={styles['player__play-next']}>
           <Icon component={PlayNextSvg}></Icon>
         </div>
