@@ -12,7 +12,7 @@ const apiErrorHandler = (msg?: string) => {
   return Promise.reject();
 };
 
-const baseURL = 'http://47.100.62.108:4000/';
+const baseURL = 'http://47.100.56.81:3000/';
 
 // 策略模式生产状态码
 const statusStrategy = (status: number) => {
