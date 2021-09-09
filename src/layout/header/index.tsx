@@ -3,7 +3,7 @@ import { Input } from 'antd';
 import { MessageSvg, SearchSvg, SettingSvg, SkinSvg, SwitchModeSvg } from '@/components/svg';
 import RouterChange from '@/business/router-change';
 import Login from '@/business/login';
-import styles from './header.module.scss';
+import styles from './header.module.less';
 import Icon from '@ant-design/icons';
 
 const Header: React.FC = () => {

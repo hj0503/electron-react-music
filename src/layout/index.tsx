@@ -2,8 +2,7 @@ import React, { Suspense } from 'react';
 import Header from './header';
 import Sidebar from './sidebar';
 import Footer from './footer';
-import styles from './layout.module.scss';
-import { RouteConfig } from '@/router';
+import styles from './layout.module.less';
 import { Spin } from 'antd';
 
 const Layout: React.FC = ({ children }) => {

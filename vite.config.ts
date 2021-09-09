@@ -5,5 +5,15 @@ import reactRefresh from '@vitejs/plugin-react-refresh';
 export default defineConfig({
   resolve: { alias: { '@': '/src' } },
   plugins: [reactRefresh()],
-  css: { modules: {} },
+  css: {
+    modules: {},
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        modifyVars: {
+          'primary-color': '#31c27c',
+        },
+      },
+    },
+  },
 });

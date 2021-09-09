@@ -1,6 +1,6 @@
 import React from 'react';
 import Player from '@/business/player';
-import styles from './footer.module.scss';
+import styles from './footer.module.less';
 
 const Footer: React.FC = () => {
   return (

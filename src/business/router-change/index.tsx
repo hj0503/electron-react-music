@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowLeftSvg, ArrowRightSvg } from '@/components/svg';
 import Icon from '@ant-design/icons';
-import styles from './index.module.scss';
+import styles from './index.module.less';
 import classNames from 'classnames';
 
 const RouterChange: React.FC = () => {

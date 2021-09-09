@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Icon from '@ant-design/icons';
 import { AvatarSvg } from '@/components/svg';
-import styles from './login.module.scss';
+import styles from './login.module.less';
 import MModal from '@/components/m-modal';
 import { Button } from 'antd';
 

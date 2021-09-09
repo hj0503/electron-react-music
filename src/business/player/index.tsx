@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from '@ant-design/icons';
-import styles from './index.module.scss';
+import styles from './index.module.less';
 import { PlayNextSvg, PlayPrevSvg, PlayRandomSvg, PlaySvg, VoiceSvg } from '@/components/svg';
 
 const Player: React.FC = () => {
