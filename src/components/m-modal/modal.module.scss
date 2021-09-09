@@ -1,15 +1,31 @@
 $modal-prefix-cls: 'm-modal';
 
-.#{$modal-prefix-cls}__wrapper {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1001;
-  .#{$modal-prefix-cls} {
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
+.#{$modal-prefix-cls}__root {
+  .#{$modal-prefix-cls}__wrapper {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1001;
+    .#{$modal-prefix-cls} {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 4px;
+      background: #fff;
+      &__header {
+        padding: 16px;
+        :global {
+          .anticon {
+            font-size: 16px;
+          }
+        }
+      }
+      &__body {
+        padding: 16px;
+      }
+    }
   }
 }

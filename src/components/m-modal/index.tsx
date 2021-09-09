@@ -1,16 +1,53 @@
-import React from 'react';
-import styles from 'modal.module.scss';
+import React, { useEffect, useState } from 'react';
+import Icon from '@ant-design/icons';
+import { CloseSvg } from '../svg';
+import styles from './modal.module.scss';
+import { isNumber } from 'lodash-es';
 
-const MModal: React.FC = props => {
+interface Props {
+  visible: boolean;
+  onCancel: () => void;
+  width?: string | number;
+}
+
+const MModal: React.FC<Props> = props => {
   const prefixCls = 'm-modal';
+  const { visible, width } = props;
+  const [animatedVisible, setAnimatedVisible] = useState(visible);
+  const contentStyle: React.CSSProperties = {};
+  if (width != null) {
+    contentStyle.width = !isNumber(width) ? width : width + 'px';
+  }
+
+  const onCancel = () => {
+    props.onCancel && props.onCancel();
+  };
+
+  useEffect(() => {
+    setAnimatedVisible(visible);
+  }, [visible]);
+
   return (
     <div className={styles[`${prefixCls}__root`]}>
       <div className={styles[`${prefixCls}__mask`]}></div>
-      <div className={styles[`${prefixCls}__wrapper`]}>
-        <div className={styles[prefixCls]}>{props.children}</div>
+      <div
+        className={styles[`${prefixCls}__wrapper`]}
+        style={{ display: !animatedVisible ? 'none' : undefined }}
+      >
+        <div className={styles[prefixCls]} style={{ ...contentStyle }}>
+          <div className={styles[`${prefixCls}__header`]}>
+            <Icon component={CloseSvg} onClick={onCancel} />
+          </div>
+          <div className={styles[`${prefixCls}__body`]}>{props.children}</div>
+        </div>
       </div>
     </div>
   );
+};
+
+MModal.defaultProps = {
+  visible: false,
+  width: '50%',
 };
 
 export default MModal;
