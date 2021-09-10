@@ -22,6 +22,12 @@ import VoiceSvg from './voice';
 import PlaySvg from './play';
 import PlayPauseSvg from './play-pause';
 import CloseSvg from './close';
+import PhoneSvg from './phone';
+import LockSvg from './lock';
+import QQSvg from './qq';
+import WechatSvg from './wechat';
+import WeiboSvg from './weibo';
+import NeteaseSvg from './netease';
 
 export {
   RecommendSvg,
@@ -48,4 +54,10 @@ export {
   PlaySvg,
   PlayPauseSvg,
   CloseSvg,
+  PhoneSvg,
+  LockSvg,
+  QQSvg,
+  WechatSvg,
+  WeiboSvg,
+  NeteaseSvg,
 };

@@ -34,6 +34,15 @@ input::-webkit-input-placeholder {
   color: #9b9b9b !important;
 }
 
+input:-webkit-autofill {
+  transition: background-color 500000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--text-color);
+}
+input,
+textarea:focus {
+  outline: none;
+}
+
 ::-webkit-scrollbar {
   height: 8px;
   width: 8px;

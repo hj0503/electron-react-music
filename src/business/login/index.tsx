@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+import React, { MouseEvent, useState } from 'react';
 import Icon from '@ant-design/icons';
-import { AvatarSvg } from '@/components/svg';
+import {
+  AvatarSvg,
+  LockSvg,
+  NeteaseSvg,
+  PhoneSvg,
+  QQSvg,
+  WechatSvg,
+  WeiboSvg,
+} from '@/components/svg';
 import styles from './login.module.less';
 import MModal from '@/components/m-modal';
-import { Button } from 'antd';
+import classNames from 'classnames';
+import { Checkbox } from 'antd';
 
 const Login: React.FC = () => {
   const [visible, setVisible] = useState(false);
+  const onLogin = (e: MouseEvent) => {
+    e.preventDefault();
+    return false;
+  };
   return (
     <div className={styles.login}>
       <div className={styles['login-not']} onClick={() => setVisible(true)}>
@@ -18,12 +31,44 @@ const Login: React.FC = () => {
         <div className={styles['login-wrap']}>
           <div className={styles['login-wrap__img']}></div>
           <form className={styles['login-wrap__form']}>
-            <div className={styles['form-input']}>
-              <input type="text" placeholder="请输入手机号" />
-              <input type="password" placeholder="请输入密码" />
+            <div className={styles['form-inputs']}>
+              <div className={classNames([styles['form-inputs__input'], styles.phone])}>
+                <Icon component={PhoneSvg} />
+                <input type="text" placeholder="请输入手机号" />
+              </div>
+              <div className={classNames([styles['form-inputs__input'], styles.password])}>
+                <Icon component={LockSvg} />
+                <input type="password" placeholder="请输入密码" />
+              </div>
             </div>
-            <Button>登录</Button>
+            <button className={styles['form-signin']} onClick={onLogin}>
+              登录
+            </button>
+            <div className={styles['form-signup']}>
+              <a href="#javascript;">注册</a>
+            </div>
           </form>
+          <div className={styles['login-wrap__ways']}>
+            <div className={styles['login-ways__item']}>
+              <Icon component={WechatSvg} />
+            </div>
+            <div className={styles['login-ways__item']}>
+              <Icon component={QQSvg} />
+            </div>
+            <div className={styles['login-ways__item']}>
+              <Icon component={WeiboSvg} />
+            </div>
+            <div className={styles['login-ways__item']}>
+              <Icon component={NeteaseSvg} />
+            </div>
+          </div>
+          <div className={styles['login-wrap__terms']}>
+            <Checkbox>
+              同意<a href="#javascript;">《服务条款》</a>
+              <a href="#javascript;">《隐私政策》</a>
+              <a href="#javascript;">《儿童隐私政策》</a>
+            </Checkbox>
+          </div>
         </div>
       </MModal>
     </div>
