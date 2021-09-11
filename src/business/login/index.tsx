@@ -45,7 +45,7 @@ const Login: React.FC = () => {
               登录
             </button>
             <div className={styles['form-signup']}>
-              <a href="#javascript;">注册</a>
+              <a href="#!">注册</a>
             </div>
           </form>
           <div className={styles['login-wrap__ways']}>
@@ -64,9 +64,9 @@ const Login: React.FC = () => {
           </div>
           <div className={styles['login-wrap__terms']}>
             <Checkbox>
-              同意<a href="#javascript;">《服务条款》</a>
-              <a href="#javascript;">《隐私政策》</a>
-              <a href="#javascript;">《儿童隐私政策》</a>
+              同意<a href="#!">《服务条款》</a>
+              <a href="#!">《隐私政策》</a>
+              <a href="#!">《儿童隐私政策》</a>
             </Checkbox>
           </div>
         </div>
