@@ -3,13 +3,10 @@ import { createSlice } from '@reduxjs/toolkit';
 export const userSlice = createSlice({
   name: 'user',
   initialState: {
-    value: 0,
+    cookie: '',
+    profile: { avatarUrl: null, nickname: '未登录', userId: 0, description: '' },
   },
-  reducers: {
-    add(state) {
-      state.value += 1;
-    },
-  },
+  reducers: {},
 });
 
 export default userSlice.reducer;

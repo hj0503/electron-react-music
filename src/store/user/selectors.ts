@@ -1,3 +1,3 @@
 import { useAppSelector } from '@/hooks';
 
-export const selectValue = useAppSelector(state => state.user.value);
+export const selectValue = useAppSelector(state => state.user.cookie);
