@@ -19,11 +19,11 @@ export type MenuType = {
   redirect?: string;
   icon?: React.FC;
 };
-export type SideMenusType = Array<MenuType>;
+export type MenusType = Array<MenuType>;
 
 export type SideBarMenusType = Array<{
   title: string;
-  sideMenus: SideMenusType;
+  sideMenus: MenusType;
 }>;
 
 export const sideBarMenus: SideBarMenusType = [
