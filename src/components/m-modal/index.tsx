@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Icon from '@ant-design/icons';
 import { CloseSvg } from '../svg';
 import styles from './modal.module.less';
-import { isNumber } from 'lodash-es';
+import { isNumber } from 'lodash';
 
 interface Props {
   visible: boolean;

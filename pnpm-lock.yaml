@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/config-conventional': ^9.1.2
   '@reduxjs/toolkit': ^1.8.1
   '@tauri-apps/api': ^1.0.0-rc.3
-  '@types/lodash-es': ^4.17.4
+  '@types/lodash': ^4.14.181
   '@types/node': ^15.14.9
   '@types/react': ^17.0.18
   '@types/react-dom': ^17.0.9
@@ -73,7 +73,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': registry.npmmirror.com/@commitlint/cli/9.1.2
   '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/9.1.2
-  '@types/lodash-es': registry.npmmirror.com/@types/lodash-es/4.17.6
+  '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.181
   '@types/node': registry.npmmirror.com/@types/node/15.14.9
   '@types/react': registry.npmmirror.com/@types/react/17.0.44
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.15
@@ -1102,14 +1102,6 @@ packages:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.11.tgz}
     name: '@types/json-schema'
     version: 7.0.11
-    dev: true
-
-  registry.npmmirror.com/@types/lodash-es/4.17.6:
-    resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/lodash-es/-/lodash-es-4.17.6.tgz}
-    name: '@types/lodash-es'
-    version: 4.17.6
-    dependencies:
-      '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.181
     dev: true
 
   registry.npmmirror.com/@types/lodash/4.14.181:
@@ -8734,7 +8726,7 @@ packages:
   registry.npmmirror.com/which-pm-runs/1.1.0:
     resolution: {integrity: sha512-SIqZVnlKPt/s5tOArosKIvGC1bwpoj6w5Q3SmimaVOOU8YFsjuMvvZO1MbKCbO8D6VV0XkROC8jrXJNYa1xBDA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/which-pm-runs/-/which-pm-runs-1.0.0.tgz}
     name: which-pm-runs
-    version: 1.1.0
+    version: 1.0.0
     deprecated: '[WARNING] Use 1.0.0 instead of 1.1.0, reason: https://github.com/zkochan/packages/commit/e7af82f03f1afe6086312d80a0fa47eb8d1c6bff'
     dev: true
 
