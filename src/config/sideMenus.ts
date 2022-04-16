@@ -13,11 +13,11 @@ import {
 
 export type MenuType = {
   path: string;
-  component: React.FC<MenuType>;
+  component: FC<MenuType>;
   label?: string;
   exact?: boolean;
   redirect?: string;
-  icon?: React.FC;
+  icon?: FC;
 };
 export type MenusType = Array<MenuType>;
 

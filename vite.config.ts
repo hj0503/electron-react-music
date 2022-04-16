@@ -1,13 +1,51 @@
 import { defineConfig } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
-import styleImport from 'vite-plugin-style-import';
+import react from '@vitejs/plugin-react';
+import eslintPlugin from 'vite-plugin-eslint';
+import { createStyleImportPlugin, AntdResolve } from 'vite-plugin-style-import';
+import { resolve } from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  resolve: { alias: { '@': '/src' } },
+  base: '',
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        modifyVars: {
+          'primary-color': '#d33a31',
+        },
+      },
+    },
+  },
+  build: {
+    outDir: resolve(__dirname, 'dist'),
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        chunkFileNames: 'static/js/[name]-[hash].js',
+        entryFileNames: 'static/js/[name]-[hash].js',
+        assetFileNames: 'static/[ext]/[name]-[hash].[ext]',
+        manualChunks(id) {
+          if (id.includes('lodash')) {
+            return 'lodash';
+          } else if (id.includes('react-router-dom')) {
+            return 'react-router-dom';
+          } else if (id.includes('react-redux')) {
+            return 'react-redux';
+          } else if (id.includes('react')) {
+            return 'react';
+          } else if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        },
+      },
+    },
+  },
+  resolve: { alias: { '@': resolve(__dirname, 'src') } },
   plugins: [
-    reactRefresh(),
-    styleImport({
+    react(),
+    eslintPlugin(),
+    createStyleImportPlugin({
+      resolves: [AntdResolve()],
       libs: [
         {
           libraryName: 'antd',
@@ -19,15 +57,4 @@ export default defineConfig({
       ],
     }),
   ],
-  css: {
-    modules: {},
-    preprocessorOptions: {
-      less: {
-        javascriptEnabled: true,
-        modifyVars: {
-          'primary-color': '#31c27c',
-        },
-      },
-    },
-  },
 });

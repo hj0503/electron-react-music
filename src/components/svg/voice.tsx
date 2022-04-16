@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const VoiceSvg: React.FC = () => {
+const VoiceSvg: FC = () => {
   return (
     <svg
       className="icon"

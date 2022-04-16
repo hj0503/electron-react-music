@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const SkinSvg: React.FC = () => {
+const SkinSvg: FC = () => {
   return (
     <svg
       className="icon"

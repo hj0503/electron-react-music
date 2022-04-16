@@ -1,7 +1,7 @@
-import React from 'react';
+import { FC } from 'react';
 import styles from './index.module.less';
 
-const Player: React.FC = () => {
+const Player: FC = () => {
   return (
     <div className={styles.player}>
       <div className={styles.player__way}></div>

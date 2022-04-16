@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const NeteaseSvg: React.FC = () => {
+const NeteaseSvg: FC = () => {
   return (
     <svg
       className="icon"

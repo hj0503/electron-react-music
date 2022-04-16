@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const MusicCloud: React.FC = () => {
+const MusicCloud: FC = () => {
   return <div>微云音乐网盘</div>;
 };
 

@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const Recommend: React.FC = () => {
+const Recommend: FC = () => {
   return <div>推荐</div>;
 };
 

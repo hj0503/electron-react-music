@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const RadioSvg: React.FC = () => {
+const RadioSvg: FC = () => {
   return (
     <svg
       className="icon"

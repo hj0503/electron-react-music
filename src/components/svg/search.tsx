@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const SearchSvg: React.FC = () => {
+const SearchSvg: FC = () => {
   return (
     <svg
       className="icon"

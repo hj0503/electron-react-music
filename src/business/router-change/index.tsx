@@ -1,11 +1,11 @@
-import React from 'react';
+import { FC } from 'react';
 import { useHistory } from 'react-router-dom';
 import { ArrowLeftSvg, ArrowRightSvg } from '@/components/svg';
 import Icon from '@ant-design/icons';
 import styles from './index.module.less';
 import classNames from 'classnames';
 
-const RouterChange: React.FC = () => {
+const RouterChange: FC = () => {
   const history = useHistory();
 
   const handleHistoryChange = (isBack = true) => {

@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const Video: React.FC = () => {
+const Video: FC = () => {
   return <div>视频</div>;
 };
 

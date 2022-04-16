@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const Radio: React.FC = () => {
+const Radio: FC = () => {
   return <div>电台</div>;
 };
 

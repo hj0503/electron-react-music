@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const RecentPlay: React.FC = () => {
+const RecentPlay: FC = () => {
   return <div>最近播放</div>;
 };
 

@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const WeiboSvg: React.FC = () => {
+const WeiboSvg: FC = () => {
   return (
     <svg
       className="icon"

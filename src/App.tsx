@@ -1,4 +1,4 @@
-import React from 'react';
+import { Fragment } from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Layout from '@/layout';
@@ -14,7 +14,7 @@ function App() {
             {routes.map((route, i) => {
               return (
                 <Route key={i} path={route.path}>
-                  <React.Fragment>
+                  <Fragment>
                     <route.component {...route} />
                     {route.routes &&
                       route.routes.map(r => {
@@ -24,7 +24,7 @@ function App() {
                           </Route>
                         );
                       })}
-                  </React.Fragment>
+                  </Fragment>
                 </Route>
               );
             })}

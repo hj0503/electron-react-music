@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const Buy: React.FC = () => {
+const Buy: FC = () => {
   return <div>已购音乐</div>;
 };
 

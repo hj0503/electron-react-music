@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const Like: React.FC = () => {
+const Like: FC = () => {
   return <div>我喜欢</div>;
 };
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import Icon from '@ant-design/icons';
 import styles from './sidebar.module.less';
@@ -6,7 +6,7 @@ import logo from '@/assets/image/logo.png';
 import { sideBarMenus } from '@/config/sideMenus';
 import classNames from 'classnames';
 
-const Sidebar: React.FC = () => {
+const Sidebar: FC = () => {
   const { push } = useHistory();
   const { pathname } = useLocation();
   const clickMenuBar = (path: string) => {

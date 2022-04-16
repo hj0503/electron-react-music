@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import { Input } from 'antd';
 import { MessageSvg, SearchSvg, SettingSvg, SkinSvg, SwitchModeSvg } from '@/components/svg';
 import RouterChange from '@/business/router-change';
@@ -6,7 +6,7 @@ import Login from '@/business/login';
 import styles from './header.module.less';
 import Icon from '@ant-design/icons';
 
-const Header: React.FC = () => {
+const Header: FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__left}>

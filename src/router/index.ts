@@ -2,7 +2,7 @@ import { sideBarMenus, MenuType } from '@/config/sideMenus';
 
 export type RouteConfig = {
   path: string;
-  component: React.FC<RouteConfig>;
+  component: FC<RouteConfig>;
   label?: string;
   exact?: boolean;
   redirect?: string;

@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const Local: React.FC = () => {
+const Local: FC = () => {
   return <div>本地歌曲</div>;
 };
 

@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const QQSvg: React.FC = () => {
+const QQSvg: FC = () => {
   return (
     <svg
       className="icon"

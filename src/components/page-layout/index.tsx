@@ -1,11 +1,11 @@
-import React from 'react';
+import { FC } from 'react';
 import styles from './page-layout.module.less';
 
 interface Props {
   title: string;
   tabs?: React.ReactNode;
 }
-const PageLayout: React.FC<Props> = props => {
+const PageLayout: FC<Props> = props => {
   const { title, tabs, children } = props;
   return (
     <div className={styles['page-layout']}>

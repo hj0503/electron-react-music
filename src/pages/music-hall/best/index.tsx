@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const Best: React.FC = () => {
+const Best: FC = () => {
   return <div>精选</div>;
 };
 

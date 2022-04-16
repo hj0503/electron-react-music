@@ -1,9 +1,9 @@
-import React from 'react';
+import { FC } from 'react';
 import Icon from '@ant-design/icons';
 import styles from './index.module.less';
 import { PlayNextSvg, PlayPrevSvg, PlayRandomSvg, PlaySvg, VoiceSvg } from '@/components/svg';
 
-const Player: React.FC = () => {
+const Player: FC = () => {
   return (
     <div className={styles.player}>
       <div className={styles.player__way}>

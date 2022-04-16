@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const PlayPauseSvg: React.FC = () => {
+const PlayPauseSvg: FC = () => {
   return (
     <svg
       className="icon"

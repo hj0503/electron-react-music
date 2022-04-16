@@ -1,4 +1,4 @@
-import React, { MouseEvent, useState } from 'react';
+import { FC, MouseEvent, useState } from 'react';
 import Icon from '@ant-design/icons';
 import {
   AvatarSvg,
@@ -14,7 +14,7 @@ import MModal from '@/components/m-modal';
 import classNames from 'classnames';
 import { Checkbox } from 'antd';
 
-const Login: React.FC = () => {
+const Login: FC = () => {
   const [visible, setVisible] = useState(false);
   const onLogin = (e: MouseEvent) => {
     e.preventDefault();

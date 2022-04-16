@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import Icon from '@ant-design/icons';
 import { CloseSvg } from '../svg';
 import styles from './modal.module.less';
@@ -10,7 +10,7 @@ interface Props {
   width?: string | number;
 }
 
-const MModal: React.FC<Props> = props => {
+const MModal: FC<Props> = props => {
   const prefixCls = 'm-modal';
   const { visible, width } = props;
   const [animatedVisible, setAnimatedVisible] = useState(visible);

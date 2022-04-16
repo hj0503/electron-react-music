@@ -1,11 +1,11 @@
-import React, { Suspense } from 'react';
+import { FC, Suspense } from 'react';
 import Header from './header';
 import Sidebar from './sidebar';
 import Footer from './footer';
 import styles from './layout.module.less';
 import { Spin } from 'antd';
 
-const Layout: React.FC = ({ children }) => {
+const Layout: FC = ({ children }) => {
   return (
     <div className={styles['main-layout']}>
       <Sidebar />

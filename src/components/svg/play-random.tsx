@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const PlayRandomSvg: React.FC = () => {
+const PlayRandomSvg: FC = () => {
   return (
     <svg
       className="icon"

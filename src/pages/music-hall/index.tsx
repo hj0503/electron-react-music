@@ -1,9 +1,9 @@
-import React from 'react';
+import { FC } from 'react';
 import PageLayout from '@/components/page-layout';
 import MenuTabs from '@/components/menu-tabs';
 
-const MusicHall: React.FC = () => {
-  const Tabs: React.FC = () => {
+const MusicHall: FC = () => {
+  const Tabs: FC = () => {
     return <MenuTabs tabs={[]}>11111</MenuTabs>;
   };
 
