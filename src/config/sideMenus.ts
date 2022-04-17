@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import { FC, lazy } from 'react';
 import {
   RecommendSvg,
   MusicSvg,

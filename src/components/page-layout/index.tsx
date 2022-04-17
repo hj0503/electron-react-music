@@ -1,9 +1,9 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import styles from './page-layout.module.less';
 
 interface Props {
   title: string;
-  tabs?: React.ReactNode;
+  tabs?: ReactNode;
 }
 const PageLayout: FC<Props> = props => {
   const { title, tabs, children } = props;
