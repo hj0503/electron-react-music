@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { sideBarMenus, MenuType } from '@/config/sideMenus';
 
 export type RouteConfig = {
