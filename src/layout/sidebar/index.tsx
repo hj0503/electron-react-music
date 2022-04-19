@@ -12,6 +12,10 @@ const Sidebar: FC = () => {
   const clickMenuBar = (path: string) => {
     push(path);
   };
+  const isActiveBar = (path: string) => {
+    const pathList = pathname.split('/');
+    return '/' + pathList[1] === path;
+  };
   return (
     <aside className={styles.sidebar}>
       <h1 className={styles['sidebar__logo']}>
@@ -27,7 +31,7 @@ const Sidebar: FC = () => {
                   return (
                     <li
                       className={classNames(styles.menu, {
-                        [styles['is-active']]: pathname.indexOf(menu.path) >= 0,
+                        [styles['is-active']]: isActiveBar(menu.path),
                       })}
                       key={menu.path}
                       onClick={() => clickMenuBar(menu.path)}
