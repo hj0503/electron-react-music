@@ -10,14 +10,16 @@ import {
   RecentPlaySvg,
   BuySvg,
 } from '@/components/svg';
+import { subMenusMap } from './subMenus';
 
 export type MenuType = {
   path: string;
-  component: FC<MenuType>;
+  component: FC<any>;
   label?: string;
   exact?: boolean;
   redirect?: string;
   icon?: FC;
+  routes?: Array<MenuType>;
 };
 export type MenusType = Array<MenuType>;
 
@@ -41,6 +43,7 @@ export const sideBarMenus: SideBarMenusType = [
         icon: MusicSvg,
         path: '/music-hall',
         component: lazy(() => import('@/pages/music-hall')),
+        routes: subMenusMap.musicHall,
       },
       {
         label: '视频',

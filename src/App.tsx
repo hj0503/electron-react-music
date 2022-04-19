@@ -16,14 +16,6 @@ function App() {
                 <Route key={i} path={route.path}>
                   <Fragment>
                     <route.component {...route} />
-                    {route.routes &&
-                      route.routes.map(r => {
-                        return (
-                          <Route key={r.path} path={r.path}>
-                            <route.component {...route} />
-                          </Route>
-                        );
-                      })}
                   </Fragment>
                 </Route>
               );
