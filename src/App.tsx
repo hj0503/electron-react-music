@@ -1,5 +1,5 @@
-import { Fragment } from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect } from 'react-router-dom';
+import { renderRoutes } from 'react-router-config';
 import { Provider } from 'react-redux';
 import Layout from '@/layout';
 import routes from '@/router';
@@ -10,18 +10,8 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Layout>
-          <Switch>
-            {routes.map((route, i) => {
-              return (
-                <Route key={i} path={route.path}>
-                  <Fragment>
-                    <route.component {...route} />
-                  </Fragment>
-                </Route>
-              );
-            })}
-            <Redirect to="/recommend" />
-          </Switch>
+          {renderRoutes(routes)}
+          <Redirect to="/recommend" />
         </Layout>
       </BrowserRouter>
     </Provider>

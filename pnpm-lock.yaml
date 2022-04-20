@@ -15,6 +15,7 @@ specifiers:
   '@types/react-dom': ^17.0.15
   '@types/react-lazyload': ^3.2.0
   '@types/react-redux': ^7.1.23
+  '@types/react-router-config': ^5.0.6
   '@types/react-router-dom': ^5.3.3
   '@typescript-eslint/eslint-plugin': ^5.18.0
   '@typescript-eslint/parser': ^5.18.0
@@ -45,6 +46,7 @@ specifiers:
   react: ^17.0.2
   react-dom: ^17.0.2
   react-redux: ^7.2.8
+  react-router-config: ^5.1.1
   react-router-dom: ^5.3.0
   react-use: ^17.3.2
   standard-version: ^9.3.2
@@ -74,6 +76,7 @@ dependencies:
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
   react-redux: registry.npmmirror.com/react-redux/7.2.8_react-dom@17.0.2+react@17.0.2
+  react-router-config: registry.npmmirror.com/react-router-config/5.1.1_react@17.0.2
   react-router-dom: registry.npmmirror.com/react-router-dom/5.3.0_react@17.0.2
   react-use: registry.npmmirror.com/react-use/17.3.2_react-dom@17.0.2+react@17.0.2
 
@@ -89,6 +92,7 @@ devDependencies:
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.15
   '@types/react-lazyload': registry.npmmirror.com/@types/react-lazyload/3.2.0
   '@types/react-redux': registry.npmmirror.com/@types/react-redux/7.1.24
+  '@types/react-router-config': registry.npmmirror.com/@types/react-router-config/5.0.6
   '@types/react-router-dom': registry.npmmirror.com/@types/react-router-dom/5.3.3
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.19.0_edcb20b406075febffd90857e23671f0
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.19.0_eslint@7.32.0+typescript@4.6.3
@@ -1302,6 +1306,16 @@ packages:
       '@types/react': registry.npmmirror.com/@types/react/17.0.44
       hoist-non-react-statics: registry.npmmirror.com/hoist-non-react-statics/3.3.2
       redux: registry.npmmirror.com/redux/4.1.2
+
+  registry.npmmirror.com/@types/react-router-config/5.0.6:
+    resolution: {integrity: sha512-db1mx37a1EJDf1XeX8jJN7R3PZABmJQXR8r28yUjVMFSjkmnQo6X6pOEEmNl+Tp2gYQOGPdYbFIipBtdElZ3Yg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-router-config/-/react-router-config-5.0.6.tgz}
+    name: '@types/react-router-config'
+    version: 5.0.6
+    dependencies:
+      '@types/history': registry.npmmirror.com/@types/history/4.7.11
+      '@types/react': registry.npmmirror.com/@types/react/17.0.44
+      '@types/react-router': registry.npmmirror.com/@types/react-router/5.1.18
+    dev: true
 
   registry.npmmirror.com/@types/react-router-dom/5.3.3:
     resolution: {integrity: sha512-kpqnYK4wcdm5UaWI3fLcELopqLrHgLqNsdpHauzlQktfkHL3npOSwtj1Uz9oKBAzs7lFtVkV8j83voAz2D8fhw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-router-dom/-/react-router-dom-5.3.3.tgz}
@@ -7234,6 +7248,19 @@ packages:
     version: 0.12.0
     engines: {node: '>=0.10.0'}
     dev: true
+
+  registry.npmmirror.com/react-router-config/5.1.1_react@17.0.2:
+    resolution: {integrity: sha512-DuanZjaD8mQp1ppHjgnnUnyOlqYXZVjnov/JzFhjLEwd3Z4dYjMSnqrEzzGThH47vpCOqPPwJM2FtthLeJ8Pbg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-router-config/-/react-router-config-5.1.1.tgz}
+    id: registry.npmmirror.com/react-router-config/5.1.1
+    name: react-router-config
+    version: 5.1.1
+    peerDependencies:
+      react: '>=15'
+      react-router: '>=5'
+    dependencies:
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.17.9
+      react: registry.npmmirror.com/react/17.0.2
+    dev: false
 
   registry.npmmirror.com/react-router-dom/5.3.0_react@17.0.2:
     resolution: {integrity: sha512-ObVBLjUZsphUUMVycibxgMdh5jJ1e3o+KpAZBVeHcNQZ4W+uUGGWsokurzlF4YOldQYRQL4y6yFRWM4m3svmuQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-router-dom/-/react-router-dom-5.3.0.tgz}

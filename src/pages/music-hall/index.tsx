@@ -1,30 +1,26 @@
 import { FC } from 'react';
+import { Redirect } from 'react-router-dom';
+import { renderRoutes } from 'react-router-config';
 import PageLayout from '@/components/page-layout';
 import MenuTabs from '@/components/menu-tabs';
 import { subMenusMap } from '@/config/subMenus';
-import { Redirect, Route, Switch } from 'react-router-dom';
 import { MenuType } from '@/config/sideMenus';
 
 interface Props {
-  routes: Array<MenuType>;
+  route: MenuType;
 }
 const MusicHall: FC<Props> = props => {
-  const { routes } = props;
+  const {
+    route: { routes },
+  } = props;
   const Tabs: FC = () => {
     return <MenuTabs tabs={subMenusMap.musicHall}></MenuTabs>;
   };
 
   return (
     <PageLayout title="音乐馆" tabs={<Tabs />}>
-      <Switch>
-        {routes &&
-          routes.map(route => (
-            <Route key={route.path} path={route.path}>
-              <route.component {...route}></route.component>
-            </Route>
-          ))}
-        <Redirect to={routes[0].path} />
-      </Switch>
+      {renderRoutes(routes)}
+      {routes && <Redirect to={routes[0].path} />}
     </PageLayout>
   );
 };

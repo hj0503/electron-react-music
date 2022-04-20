@@ -3,7 +3,7 @@ import { sideBarMenus, MenuType } from '@/config/sideMenus';
 
 export type RouteConfig = {
   path: string;
-  component: FC<RouteConfig>;
+  component: FC<any>;
   label?: string;
   exact?: boolean;
   redirect?: string;
