@@ -10,7 +10,7 @@ import {
   RecentPlaySvg,
   BuySvg,
 } from '@/components/svg';
-import { subMenusMap } from './subMenus';
+import { subMenusMap } from './sub-menus';
 
 export type MenuType = {
   path: string;

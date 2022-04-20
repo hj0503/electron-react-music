@@ -3,7 +3,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 import Icon from '@ant-design/icons';
 import styles from './sidebar.module.less';
 import logo from '@/assets/image/logo.png';
-import { sideBarMenus } from '@/config/sideMenus';
+import { sideBarMenus } from '@/config/side-menus';
 import classNames from 'classnames';
 
 const Sidebar: FC = () => {

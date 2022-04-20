@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { sideBarMenus, MenuType } from '@/config/sideMenus';
+import { sideBarMenus, MenuType } from '@/config/side-menus';
 
 export type RouteConfig = {
   path: string;

@@ -3,9 +3,8 @@ import { Redirect } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 import PageLayout from '@/components/page-layout';
 import MenuTabs from '@/components/menu-tabs';
-import { subMenusMap } from '@/config/subMenus';
-import { MenuType } from '@/config/sideMenus';
-
+import { subMenusMap } from '@/config/sub-menus';
+import { MenuType } from '@/config/side-menus';
 interface Props {
   route: MenuType;
 }
