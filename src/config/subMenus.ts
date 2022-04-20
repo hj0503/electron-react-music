@@ -14,6 +14,31 @@ const subMenusMap: Data<MenusType> = {
       path: '/music-hall/radio',
       component: lazy(() => import('@/pages/music-hall/radio')),
     },
+    {
+      label: '排名',
+      path: '/music-hall/rank',
+      component: lazy(() => import('@/pages/music-hall/rank')),
+    },
+    {
+      label: '歌手',
+      path: '/music-hall/singer',
+      component: lazy(() => import('@/pages/music-hall/singer')),
+    },
+    {
+      label: '分类歌单',
+      path: '/music-hall/song-list',
+      component: lazy(() => import('@/pages/music-hall/song-list')),
+    },
+    {
+      label: '数字专辑',
+      path: '/music-hall/digital-album',
+      component: lazy(() => import('@/pages/music-hall/digital-album')),
+    },
+    {
+      label: '手机专享',
+      path: '/music-hall/phone-exclusive',
+      component: lazy(() => import('@/pages/music-hall/phone-exclusive')),
+    },
   ],
 };
 
