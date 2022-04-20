@@ -8,7 +8,8 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx src",
-    "git:aliyun": "./git.sh"
+    "git:aliyun": "./git.sh",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",

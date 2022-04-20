@@ -1,10 +1,9 @@
 import { FC } from 'react';
 import PageLayout from '@/components/page-layout';
 import MenuTabs from '@/components/menu-tabs';
-import { subMenusMap } from '@/config/subMenus';
+import { subMenusMap } from '@/config/sub-menus';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import { MenuType } from '@/config/sideMenus';
-
+import { MenuType } from '@/config/side-menus';
 interface Props {
   routes: Array<MenuType>;
 }

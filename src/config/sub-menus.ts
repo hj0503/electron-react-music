@@ -1,6 +1,6 @@
 import { Data } from '@/types';
 import { lazy } from 'react';
-import { MenusType } from './sideMenus';
+import { MenusType } from './side-menus';
 
 const subMenusMap: Data<MenusType> = {
   musicHall: [

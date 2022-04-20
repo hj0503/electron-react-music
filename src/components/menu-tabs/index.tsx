@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import styles from './menu-tabs.module.less';
-import { MenuType } from '@/config/sideMenus';
+import { MenuType } from '@/config/side-menus';
 import { useHistory } from 'react-router-dom';
 
 interface Props {
