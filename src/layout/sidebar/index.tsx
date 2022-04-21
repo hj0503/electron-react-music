@@ -1,16 +1,16 @@
 import { FC } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Icon from '@ant-design/icons';
 import styles from './sidebar.module.less';
 import logo from '@/assets/image/logo.png';
-import { sideBarMenus } from '@/config/side-menus';
 import classNames from 'classnames';
+import { sideBarMenus } from '@/config/side-menus';
 
 const Sidebar: FC = () => {
-  const { push } = useHistory();
+  const navigate = useNavigate();
   const { pathname } = useLocation();
   const clickMenuBar = (path: string) => {
-    push(path);
+    navigate(path);
   };
   const isActiveBar = (path: string) => {
     const pathList = pathname.split('/');

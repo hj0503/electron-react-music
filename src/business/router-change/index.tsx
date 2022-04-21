@@ -1,12 +1,12 @@
 import { FC } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ArrowLeftSvg, ArrowRightSvg } from '@/components/svg';
 import Icon from '@ant-design/icons';
 import styles from './index.module.less';
 import classNames from 'classnames';
 
 const RouterChange: FC = () => {
-  const history = useHistory();
+  const history = useNavigate();
 
   const handleHistoryChange = (isBack = true) => {
     history.go(isBack ? -1 : 1);

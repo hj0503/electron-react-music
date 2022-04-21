@@ -1,17 +1,19 @@
-import { BrowserRouter, Redirect } from 'react-router-dom';
-import { renderRoutes } from 'react-router-config';
+import { BrowserRouter, useRoutes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Layout from '@/layout';
-import routes from '@/router';
 import store from '@/store';
+import routes from './router';
+
+const Routes = () => {
+  return useRoutes(routes.map(route => ({ ...route, element: <route.element /> })));
+};
 
 function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
         <Layout>
-          {renderRoutes(routes)}
-          <Redirect to="/recommend" />
+          <Routes />
         </Layout>
       </BrowserRouter>
     </Provider>
