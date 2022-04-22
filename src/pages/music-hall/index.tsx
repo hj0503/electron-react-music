@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Outlet } from 'react-router-dom';
 import PageLayout from '@/components/page-layout';
 import MenuTabs from '@/components/menu-tabs';
 import { subMenusMap } from '@/config/sub-menus';
@@ -13,7 +14,7 @@ const MusicHall: FC<Props> = props => {
 
   return (
     <PageLayout title="音乐馆" tabs={<Tabs />}>
-      <div>111</div>
+      <Outlet></Outlet>
     </PageLayout>
   );
 };
