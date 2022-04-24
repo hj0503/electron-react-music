@@ -14,6 +14,7 @@ const MusicHall: FC<Props> = props => {
 
   return (
     <PageLayout title="音乐馆" tabs={<Tabs />}>
+      {/* 测试一下 */}
       <Outlet></Outlet>
     </PageLayout>
   );
