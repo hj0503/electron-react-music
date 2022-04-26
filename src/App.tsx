@@ -5,7 +5,8 @@ import store from '@/store';
 import routes from './router';
 
 const Routes = () => {
-  return useRoutes(routes.map(route => ({ ...route, element: <route.element /> })));
+  const _routes = routes.map(route => ({ ...route, element: <route.element /> }));
+  return useRoutes(_routes);
 };
 
 function App() {
