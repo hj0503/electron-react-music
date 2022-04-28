@@ -50,6 +50,7 @@ export const sideBarMenus: SideBarMenusType = [
         icon: VideoSvg,
         path: '/video',
         component: lazy(() => import('@/pages/video')),
+        routes: subMenusMap.video,
       },
       {
         label: '电台',

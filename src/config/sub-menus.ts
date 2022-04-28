@@ -40,6 +40,23 @@ const subMenusMap: Data<MenusType> = {
       component: lazy(() => import('@/pages/music-hall/phone-exclusive')),
     },
   ],
+  video: [
+    {
+      label: '推荐',
+      path: '/video/recommed',
+      component: lazy(() => import('@/pages/video/recommend')),
+    },
+    {
+      label: '排行榜',
+      path: '/video/rank',
+      component: lazy(() => import('@/pages/video/rank')),
+    },
+    {
+      label: '视频库',
+      path: '/video/library',
+      component: lazy(() => import('@/pages/video/library')),
+    },
+  ],
 };
 
 export { subMenusMap };
