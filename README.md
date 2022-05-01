@@ -1,3 +1,3 @@
 # electron-react-music
 
-> react16 + react-router-dom5 + typescript + electron
+> react16 + react-router-dom5/6 + typescript + electron
