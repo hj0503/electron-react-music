@@ -1,22 +1,27 @@
 .menu-tabs {
   position: relative;
+
   &__tab {
     height: 40px;
     line-height: 40px;
     font-size: 14px;
-    margin-right: 50px;
+    margin-right: 40px;
     padding: 8px 0;
     cursor: pointer;
+
     &:last-of-type {
       margin-right: 0;
     }
+
     &:hover {
       color: var(--primary-color);
     }
+
     &.is-active {
       color: var(--primary-color);
     }
   }
+
   &__ink-tab {
     position: absolute;
     bottom: 0;

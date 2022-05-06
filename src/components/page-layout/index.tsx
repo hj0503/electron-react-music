@@ -1,4 +1,5 @@
-import { FC, ReactNode } from 'react';
+import { Spin } from 'antd';
+import { FC, ReactNode, Suspense } from 'react';
 import styles from './page-layout.module.less';
 
 interface Props {
@@ -11,7 +12,11 @@ const PageLayout: FC<Props> = props => {
     <div className={styles['page-layout']}>
       <div className={styles['page-layout__header']}>{title}</div>
       {tabs && <div className={styles['page-layout__tabs']}>{tabs}</div>}
-      <div className={styles['page-layout__content']}>{children}</div>
+      <div className={styles['page-layout__content']}>
+        <Suspense fallback={<Spin className={styles['page-layout__loading']} />}>
+          {children}
+        </Suspense>
+      </div>
     </div>
   );
 };

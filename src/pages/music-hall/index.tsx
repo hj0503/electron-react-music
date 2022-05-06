@@ -4,6 +4,7 @@ import MenuTabs from '@/components/menu-tabs';
 import { subMenusMap } from '@/config/sub-menus';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { MenuType } from '@/config/side-menus';
+import { Spin } from 'antd';
 interface Props {
   routes: Array<MenuType>;
 }
