@@ -57,6 +57,28 @@ const subMenusMap: Data<MenusType> = {
       component: lazy(() => import('@/pages/video/library')),
     },
   ],
+  like: [
+    {
+      label: '歌曲',
+      path: '/like/song',
+      component: lazy(() => import('@/pages/like/song')),
+    },
+    {
+      label: '专辑',
+      path: '/like/album',
+      component: lazy(() => import('@/pages/like/album')),
+    },
+    {
+      label: '歌单',
+      path: '/like/song-list',
+      component: lazy(() => import('@/pages/like/song-list')),
+    },
+    {
+      label: 'mv',
+      path: '/like/mv',
+      component: lazy(() => import('@/pages/like/mv')),
+    },
+  ],
 };
 
 export { subMenusMap };

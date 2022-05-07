@@ -68,6 +68,7 @@ export const sideBarMenus: SideBarMenusType = [
         icon: LikeSvg,
         path: '/like',
         component: lazy(() => import('@/pages/like')),
+        routes: subMenusMap.like,
       },
       {
         label: '本地歌曲',
