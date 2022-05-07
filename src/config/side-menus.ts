@@ -73,8 +73,9 @@ export const sideBarMenus: SideBarMenusType = [
       {
         label: '本地歌曲',
         icon: LocalSvg,
-        path: '/local',
-        component: lazy(() => import('@/pages/local')),
+        path: '/local-song',
+        component: lazy(() => import('@/pages/local-song')),
+        routes: subMenusMap.localSong,
       },
       {
         label: '下载歌曲',

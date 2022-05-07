@@ -79,6 +79,18 @@ const subMenusMap: Data<MenusType> = {
       component: lazy(() => import('@/pages/like/mv')),
     },
   ],
+  localSong: [
+    {
+      label: '本地歌曲',
+      path: '/local-song/local',
+      component: lazy(() => import('@/pages/local-song/local')),
+    },
+    {
+      label: 'iTunes歌曲',
+      path: '/local-song/itunes',
+      component: lazy(() => import('@/pages/local-song/itunes')),
+    },
+  ],
 };
 
 export { subMenusMap };
