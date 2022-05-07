@@ -108,6 +108,18 @@ const subMenusMap: Data<MenusType> = {
       component: lazy(() => import('@/pages/download-song/history')),
     },
   ],
+  buy: [
+    {
+      label: '数字专辑',
+      path: '/buy/digital-album',
+      component: lazy(() => import('@/pages/buy/digital-album')),
+    },
+    {
+      label: '单曲',
+      path: '/buy/single',
+      component: lazy(() => import('@/pages/buy/single')),
+    },
+  ],
 };
 
 export { subMenusMap };

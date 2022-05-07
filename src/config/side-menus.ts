@@ -95,6 +95,7 @@ export const sideBarMenus: SideBarMenusType = [
         icon: BuySvg,
         path: '/buy',
         component: lazy(() => import('@/pages/buy')),
+        routes: subMenusMap.buy,
       },
       {
         label: '微云音乐网盘',
