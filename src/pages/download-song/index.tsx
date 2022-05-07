@@ -10,11 +10,11 @@ interface Props {
 const LocalSong: FC<Props> = props => {
   const { routes } = props;
   const Tabs: FC = () => {
-    return <MenuTabs tabs={subMenusMap.localSong}></MenuTabs>;
+    return <MenuTabs tabs={subMenusMap.download}></MenuTabs>;
   };
 
   return (
-    <PageLayout title="本地歌曲" tabs={<Tabs />}>
+    <PageLayout title="下载歌曲" tabs={<Tabs />}>
       <Switch>
         {routes &&
           routes.map(route => (

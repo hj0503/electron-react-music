@@ -80,8 +80,9 @@ export const sideBarMenus: SideBarMenusType = [
       {
         label: '下载歌曲',
         icon: DownloadSvg,
-        path: '/download',
-        component: lazy(() => import('@/pages/download')),
+        path: '/download-song',
+        component: lazy(() => import('@/pages/download-song')),
+        routes: subMenusMap.download,
       },
       {
         label: '最近播放',

@@ -91,6 +91,23 @@ const subMenusMap: Data<MenusType> = {
       component: lazy(() => import('@/pages/local-song/itunes')),
     },
   ],
+  download: [
+    {
+      label: '已下载',
+      path: '/download-song/have-downloaded',
+      component: lazy(() => import('@/pages/download-song/have-downloaded')),
+    },
+    {
+      label: '正在下载',
+      path: '/download-song/is-downloading',
+      component: lazy(() => import('@/pages/download-song/is-downloading')),
+    },
+    {
+      label: '下载历史漫游',
+      path: '/download-song/history',
+      component: lazy(() => import('@/pages/download-song/history')),
+    },
+  ],
 };
 
 export { subMenusMap };
