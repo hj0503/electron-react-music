@@ -3,6 +3,20 @@
   "plugins": ["stylelint-order"],
   "rules": {
     "selector-max-id": null,
-    "max-nesting-depth": null
-  }
+    "max-nesting-depth": null,
+    "selector-class-pattern": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.less"],
+      "customSyntax": "postcss-less"
+    }
+  ],
+  "ignoreFiles": ["dist/**/*"]
 }
