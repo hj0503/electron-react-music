@@ -1,0 +1,144 @@
+@import '/src/assets/style/common.less';
+
+.footer {
+  align-items: center;
+  -webkit-app-region: drag;
+  background-color: #fff;
+  display: flex;
+  flex-shrink: 0;
+  height: 60px;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 30px;
+  position: relative;
+  z-index: 4;
+
+  &__progress-bar {
+    background-color: #f3f3f2;
+    cursor: pointer;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    &::-webkit-progress-bar {
+      background-color: #f3f3f2;
+    }
+
+    &::-webkit-progress-value {
+      background-color: var(--primary-color);
+      position: absolute;
+
+      // &::after {
+      //   background-color: var(--primary-color);
+      //   border-radius: 50%;
+      //   // display: none;
+      //   height: 12px;
+      //   position: absolute;
+      //   right: 0;
+      //   top: 50%;
+      //   transform: translate(50%, -50%);
+      //   width: 12px;
+      // }
+    }
+  }
+
+  &__left {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    max-width: 320px;
+
+    img {
+      border-radius: 4px;
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+    }
+
+    &-name {
+      height: 100%;
+      margin-left: 10px;
+      .ellipsis();
+
+      div {
+        height: 20px;
+        line-height: 20px;
+      }
+    }
+
+    audio {
+      position: absolute;
+      visibility: hidden;
+      z-index: -1;
+    }
+  }
+
+  &__right span {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  &__lyric {
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      color: #000;
+    }
+
+    &.--active {
+      color: var(--primary-color);
+    }
+  }
+
+  &__mid {
+    align-items: center;
+    display: flex;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    span {
+      font-size: 18px;
+      margin-left: 35px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .--big {
+      font-size: 40px;
+    }
+
+    .--medium {
+      font-size: 26px;
+    }
+
+    .--red {
+      color: var(--primary-color);
+    }
+
+    .--disable {
+      color: #f3c5c2;
+      cursor: not-allowed;
+
+      &[tabindex]:hover {
+        color: #f3c5c2;
+      }
+    }
+  }
+
+  &__volume {
+    height: 100px;
+    padding-bottom: 10px;
+
+    > div {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

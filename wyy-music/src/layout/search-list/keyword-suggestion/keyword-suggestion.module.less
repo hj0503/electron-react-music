@@ -1,0 +1,41 @@
+@import '/src/assets/style/common.less';
+
+.keyword-suggestion {
+  padding: 8px 0;
+
+  &__header {
+    margin-bottom: 8px;
+    padding: 0 8px;
+
+    span {
+      cursor: pointer;
+    }
+
+    strong {
+      color: #6088b7;
+      font-weight: normal;
+    }
+  }
+
+  &__title {
+    color: #999;
+    line-height: 1;
+    padding: 10px 8px;
+
+    span {
+      margin-right: 5px;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 25px;
+    .ellipsis();
+
+    &:hover {
+      background-color: #f2f3f2;
+    }
+  }
+}

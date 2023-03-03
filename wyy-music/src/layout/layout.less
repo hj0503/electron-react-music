@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  height: calc(100% - 110px);
+}
+
+.main {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+
+  &__loading {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

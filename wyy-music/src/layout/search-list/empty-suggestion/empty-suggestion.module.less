@@ -1,0 +1,142 @@
+@import '/src/assets/style/common.less';
+
+.empty-suggestion {
+  &__header {
+    padding: 18px 20px;
+
+    &-delete {
+      cursor: pointer;
+      margin-left: 10px;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    h2 {
+      color: #666;
+      font-size: 15px;
+      font-weight: normal;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 54px;
+    padding: 0 20px;
+
+    p {
+      color: #c9c9c9;
+      flex-shrink: 0;
+      margin: 0;
+      width: 34px;
+    }
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+
+    &-top {
+      line-height: 1;
+
+      strong {
+        color: #333;
+        font-size: 12px;
+        font-weight: normal;
+      }
+
+      mark {
+        background-color: transparent;
+        color: #ff393b;
+        font-size: 8px;
+        font-style: italic;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+
+      span {
+        color: #ccc;
+        font-size: 11px;
+        margin-left: 11px;
+      }
+    }
+
+    &-right {
+      color: #b9b9b8;
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      height: 100%;
+      justify-content: center;
+      line-height: 1;
+      width: calc(100% - 34px);
+    }
+
+    &-bottom {
+      font-size: 13px;
+      line-height: 1;
+      margin-top: 10px;
+      .ellipsis();
+    }
+
+    &:nth-child(-n + 4) {
+      p {
+        color: #ff393b;
+      }
+
+      .empty-suggestion__item-top strong {
+        color: #000;
+      }
+    }
+  }
+
+  &__history {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      border: 1px solid #cecece;
+      border-radius: 12px;
+      color: #333;
+      cursor: pointer;
+      flex-shrink: 0;
+      font-size: 14px;
+      height: 24px;
+      line-height: 20px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      padding: 0 15px;
+      position: relative;
+
+      span {
+        display: none;
+        font-size: 8px;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:hover {
+        background-color: #f2f2f2;
+
+        span {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  &__title {
+    color: #727272;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 16px;
+    margin-top: 6px;
+    padding: 0 20px;
+  }
+}
