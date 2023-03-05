@@ -1,0 +1,43 @@
+.table {
+  width: 100%;
+
+  th,
+  td {
+    height: 35px;
+    padding: 0 5px;
+    text-align: left;
+  }
+
+  thead th {
+    color: #888;
+    font-weight: normal;
+  }
+
+  tbody {
+    tr {
+      &:nth-child(2n + 1) {
+        background-color: #fafafb;
+      }
+
+      &:hover {
+        background-color: #f2f2f3;
+      }
+    }
+
+    .--active {
+      color: var(--primary-color);
+    }
+
+    .--disable {
+      color: #c4c4c5;
+    }
+  }
+
+  th:hover {
+    background-color: #f2f2f3;
+  }
+
+  &__cell {
+    padding: 0 10px;
+  }
+}
