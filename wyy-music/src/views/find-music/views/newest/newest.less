@@ -1,0 +1,46 @@
+.newest {
+  padding-top: 20px;
+
+  &__switch {
+    border: 1px solid #bbbcbc;
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto;
+    width: 230px;
+
+    &-item {
+      border-radius: 15px;
+      color: #333;
+      cursor: pointer;
+      flex: 1;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+
+      &.--active {
+        background-color: #bbb;
+        color: #fff;
+      }
+    }
+  }
+
+  &__control {
+    align-items: center;
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 30px;
+  }
+
+  &__category {
+    cursor: pointer;
+    margin-right: 30px;
+
+    &.--active,
+    &:hover {
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}

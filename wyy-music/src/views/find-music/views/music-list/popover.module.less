@@ -1,0 +1,77 @@
+.popover {
+  width: 720px;
+
+  &__header {
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    padding: 12px 20px;
+
+    button {
+      border: 0;
+      border: 15px;
+      height: 30px;
+      width: 80px;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--primary-color);
+      }
+    }
+
+    .--active {
+      background-color: #fdf6f5;
+      color: var(--primary-color);
+
+      &:hover {
+        background-color: transparent;
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    font-size: 16px;
+    margin-top: 40px;
+
+    &:nth-child(2) {
+      margin-top: 20px;
+    }
+  }
+
+  &__left {
+    color: #999;
+    flex-shrink: 0;
+    margin-left: 9px;
+
+    span {
+      margin-left: 6px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+  }
+
+  &__label {
+    border-radius: 15px;
+    cursor: pointer;
+    height: 30px;
+    margin-bottom: 24px;
+    width: 100px;
+
+    strong {
+      color: var(--primary-color);
+      display: inline-block;
+      font-size: 12px;
+      transform: translate(-5px, -3px) scale(0.5);
+    }
+
+    &:hover,
+    &.--active {
+      color: var(--primary-color);
+    }
+  }
+}

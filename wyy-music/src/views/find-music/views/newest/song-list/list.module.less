@@ -1,0 +1,89 @@
+@import '/src/assets/style/common.less';
+
+.song-list {
+  margin-top: 5px;
+
+  &__item {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    padding: 0 30px;
+
+    &:nth-child(2n + 1) {
+      background-color: #fafafb;
+    }
+
+    > div {
+      flex: 1;
+    }
+
+    &:hover {
+      background-color: #f0eff0;
+    }
+  }
+
+  &__left {
+    align-items: center;
+    display: flex;
+  }
+
+  &__right {
+    color: #646464;
+    display: flex;
+  }
+
+  &__ordinal {
+    color: #bfbfbf;
+    display: block;
+    width: 30px;
+  }
+
+  &__img {
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+
+    &-wrapper {
+      height: 60px;
+      position: relative;
+      width: 60px;
+    }
+  }
+
+  &__song {
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+
+    p {
+      font-size: 14px;
+      margin: 0;
+      max-width: 210px;
+      .ellipsis();
+    }
+
+    small {
+      border: 1px solid #ffa484;
+      border-radius: 4px;
+      color: #fd672f;
+      margin-left: 5px;
+      padding: 0 3px;
+      transform: scale(0.6);
+    }
+
+    span {
+      color: var(--primary-color);
+      margin-left: 5px;
+    }
+  }
+
+  &__author {
+    width: 130px;
+    .ellipsis();
+  }
+
+  &__album {
+    width: 175px;
+    .ellipsis();
+  }
+}

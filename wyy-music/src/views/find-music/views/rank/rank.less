@@ -1,0 +1,48 @@
+.rank {
+  padding: 30px;
+  padding-bottom: 100px;
+
+  &__header {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  &__official {
+    overflow: hidden;
+  }
+
+  &__global {
+    display: grid;
+    grid-column-gap: 18px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__item {
+    flex-shrink: 0;
+    margin-bottom: 55px;
+  }
+
+  &__img {
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+
+    &-wrapper {
+      height: 170px;
+      position: relative;
+      width: 170px;
+    }
+  }
+
+  &__detail {
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
