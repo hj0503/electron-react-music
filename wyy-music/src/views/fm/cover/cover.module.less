@@ -1,0 +1,42 @@
+.cover {
+  flex-shrink: 0;
+  height: 270px;
+  margin-top: 50px;
+  position: relative;
+  width: 310px;
+
+  img {
+    border: 1px solid #f2f2f1;
+    border-radius: 8px;
+    height: 270px;
+    width: 270px;
+  }
+
+  &__pre-img {
+    left: -20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(0.85);
+  }
+
+  &__img {
+    left: 40px;
+    position: absolute;
+    width: 270px;
+  }
+
+  &__play {
+    cursor: pointer;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+
+    &.--pause {
+      left: 95%;
+      top: 95%;
+      transform: translate(-95%, -95%);
+    }
+  }
+}
