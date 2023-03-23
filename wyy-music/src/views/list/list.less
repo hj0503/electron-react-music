@@ -1,0 +1,152 @@
+@import '/src/assets/style/common.less';
+
+.list {
+  .img() {
+    background-color: #a5a5a5;
+    border-radius: 4px;
+    flex-shrink: 0;
+    height: 200px;
+    width: 200px;
+  }
+
+  &__header {
+    align-items: center;
+    display: flex;
+    padding: 15px 30px;
+  }
+
+  &__img {
+    .img();
+
+    &-default {
+      align-items: center;
+      color: #fff;
+      display: flex;
+      font-size: 80px;
+      justify-content: center;
+      .img();
+    }
+
+    // &.--album {
+    //   margin-right: 30px;
+    //   position: relative;
+
+    //   &::after {
+    //     background-image: url('/src/assets/img/coverall.png');
+    //     background-position: 109px 777px;
+    //     background-size: 760px 2990px;
+    //     content: '';
+    //     display: block;
+    //     height: 100%;
+    //     position: absolute;
+    //     right: -50px;
+    //     top: 0;
+    //     width: 50px;
+    //   }
+    // }
+  }
+
+  &__right {
+    height: 200px;
+    margin-left: 30px;
+  }
+
+  &__title {
+    align-items: center;
+    display: flex;
+
+    span {
+      border: 1px solid var(--primary-color);
+      border-radius: 4px;
+      color: var(--primary-color);
+      padding: 0 4px;
+    }
+
+    strong {
+      font-size: 18px;
+      margin-left: 10px;
+    }
+  }
+
+  &__user-info {
+    align-items: center;
+    display: flex;
+    margin-top: 18px;
+
+    img {
+      border-radius: 50%;
+      cursor: pointer;
+      height: 24px;
+      width: 24px;
+    }
+
+    a {
+      margin-left: 8px;
+    }
+
+    span {
+      color: #666;
+      margin-left: 8px;
+    }
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 22px;
+
+    .--title {
+      color: #333;
+    }
+
+    .--left {
+      margin-left: 12px;
+    }
+  }
+
+  &__count {
+    margin-top: 10px;
+  }
+
+  &__introduction {
+    display: flex;
+    margin-top: 10px;
+
+    div {
+      width: 300px;
+      .ellipsis();
+    }
+  }
+
+  &__control {
+    align-items: center;
+    display: flex;
+    margin-top: 22px;
+
+    button {
+      flex-shrink: 0;
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    span {
+      margin-right: 5px;
+    }
+  }
+
+  &__singer span:not(.--title) {
+    color: #507daf;
+    cursor: pointer;
+  }
+
+  &__publish-time {
+    margin-top: 10px;
+  }
+
+  &__tabs .ant-tabs > .ant-tabs-nav {
+    margin: 0 30px;
+  }
+}
