@@ -1,0 +1,35 @@
+.button-group {
+  border-radius: 2px;
+  display: flex;
+
+  &__item {
+    background-color: #f2f2f1;
+    border: 0;
+    color: #919191;
+    cursor: pointer;
+    font-size: 14px;
+    height: 20px;
+    margin-left: 1px;
+    padding: 0;
+    width: 25px;
+
+    &:first-child {
+      border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 2px;
+      border-top-right-radius: 2px;
+    }
+
+    &:hover {
+      background-color: #e8e8e8;
+    }
+
+    &.--active {
+      background-color: #bfbfbf;
+      color: #fff;
+    }
+  }
+}
