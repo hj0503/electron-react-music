@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@vueuse/core": "^9.13.0",
+    "dayjs": "^1.11.7",
     "element-plus": "^2.3.0",
+    "json5": "^2.2.3",
     "vue": "^3.2.45"
   },
   "devDependencies": {
